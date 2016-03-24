@@ -32,4 +32,4 @@ def show_all_user_profile():
 
 if __name__ == '__main__':
     mongodb_test = MongoDBTest()
-    app.run()
+    app.run(host="0.0.0.0", port=8080)
