@@ -3,12 +3,14 @@ import pymongo
 from datetime import datetime
 from pymongo import MongoClient
 from pymongo import ReturnDocument
+import os
 
 
 class MongoDBTest:
     def __init__(self):
-        self.host ="mongodb.demo.svc.cluster.local"
-        self.port = 27017
+
+        self.host =some_value = os.environ["mongoDB"]
+        self.port = os.environ["port"]
         self.database_name = "test"
         self.collection_name = "collection1"
         
