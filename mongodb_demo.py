@@ -10,7 +10,7 @@ class MongoDBTest:
     def __init__(self):
 
         self.host =some_value = os.environ["MONGODB_URL"]
-        self.port = os.environ["MONGODB_PORT"]
+        self.port = int(os.environ["MONGODB_PORT"])
         self.database_name = "test"
         self.collection_name = "collection1"
         
