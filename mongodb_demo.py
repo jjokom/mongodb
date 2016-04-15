@@ -7,8 +7,8 @@ from pymongo import ReturnDocument
 
 class MongoDBTest:
     def __init__(self):
-        self.host = '172.16.0.11'
-        self.port = 30170
+        self.host ="mongodb.demo.svc.cluster.local"
+        self.port = 27017
         self.database_name = "test"
         self.collection_name = "collection1"
         
